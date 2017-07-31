@@ -1,0 +1,18 @@
+extends layout
+
+block content
+
+  form(action="/register" method="post")
+    h1 Please register
+
+    .form-group
+      label(for="email") Email
+      input.form-control(type="email" id="email" name="email" placeholder="my@mail.com" required autofocus)
+    .form-group
+      label(for="displayName") Display name
+      input.form-control(type="text" id="displayName" name="displayName" placeholder="Mr Twister" required)
+    .form-group
+      label(for="password") Password
+      input.form-control(type="password" id="password" name="password" required)
+
+    button.btn.btn-lg.btn-primary.btn-block(type="submit") Register

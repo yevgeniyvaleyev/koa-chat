@@ -1,0 +1,8 @@
+extends ./layout
+
+block content
+  h1 Подтверждение email
+  p Для завершения регистрации перейдите, пожалуйста, по ссылке
+    = ' '
+    a(href=link) #{link}
+    | .

@@ -1,0 +1,6 @@
+config/secure.js
+node_modules/
+gulpfile.js
+fixtures/
+test/
+tasks/

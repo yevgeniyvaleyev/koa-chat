@@ -1,0 +1,18 @@
+extends layout
+
+block content
+
+  h1 Welcome #{name}
+  form(action="/logout" method="post")
+    span Добро пожаловать в чат!
+    button.btn.btn-sm(type="submit") Logout
+
+  form#publish.form-inline
+    input(name="message" type="text")
+    input.btn.btn-primary(type="submit" value="Отправить")
+
+  ul#messages
+
+  script(src="/chat.js")
+
+
